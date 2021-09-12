@@ -1,5 +1,5 @@
 import sys, os, csv
-from get_encoding import get_encoding
+from .get_encoding import get_encoding
 #获取csv文件的头信息
 def get_csv_header(filename):
     try:

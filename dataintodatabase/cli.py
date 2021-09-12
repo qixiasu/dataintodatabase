@@ -1,7 +1,7 @@
 """Console script for dataintodatabase."""
 import argparse
 import sys
-from dataintodatabase import printer
+from .dataintodatabase import printer
 
 def main():
     """Console script for dataintodatabase."""

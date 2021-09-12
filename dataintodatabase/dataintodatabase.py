@@ -1,7 +1,7 @@
 import os
-from get_csv_header import get_csv_header
-from head_handle import special_character_handle
-from get_encoding import get_encoding
+from .get_csv_header import get_csv_header
+from .head_handle import special_character_handle
+from .get_encoding import get_encoding
 from rich import print
 #生成建表语句和入库语句
 def printer (filename, tablename):
