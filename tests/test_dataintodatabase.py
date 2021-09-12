@@ -5,7 +5,7 @@
 
 import unittest
 
-from dataintodatabase import dataintodatabase
+from dataintodatabase.dataintodatabase import printer
 
 
 class TestDataintodatabase(unittest.TestCase):
