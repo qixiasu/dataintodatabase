@@ -21,7 +21,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: qinxuan
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: 123qwe*90OP
   on:
     tags: true
     repo: qinxian1989/dataintodatabase
