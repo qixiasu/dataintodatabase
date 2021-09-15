@@ -1,10 +1,12 @@
-from charset_normalizer import from_path
+﻿import cchardet as chardet
 
-def get_encoding(file_path):
-    '''
-    输入文件路径，返回文件编码
-    '''
-    results = from_path(file_path)
-    for match in results:
-        result = match.encoding,match._has_sig_or_bom, match.language, match.encoding_aliases
-        return {'encoding':result[0],'has_sig_or_bom':result[1],'language':result[2],'encoding_aliases':result[3]}
+def get_encoding(filename):
+    with open(filename, "rb") as f:
+        msg = f.read()
+        result = chardet.detect(msg)
+        #如果编码的可信度很高，则直接使用检测出的编码
+        if result['confidence'] > 0.9:
+            return (result['encoding'])
+        #如果编码的可信度比较低，则使用gb2312编码
+        else:
+            return 'gb2312'

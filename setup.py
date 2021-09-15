@@ -3,14 +3,14 @@
 """The setup script."""
 
 from setuptools import setup, find_packages
-
+from dataintodatabase.__version__ import version
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['charset_normalizer','rich']
+requirements = ['cchardet','rich']
 
 test_requirements = [ ]
 
@@ -44,6 +44,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/qinxian1989/dataintodatabase',
-    version='0.1.0',
+    version=version,
     zip_safe=False,
 )

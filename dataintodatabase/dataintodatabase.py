@@ -27,7 +27,7 @@ def printer (filename, tablename):
 
     print(");")
 
-    print("COPY %s FROM '%s' DELIMITER ',' CSV HEADER ENCODING '%s';" %(tablename, os.path.abspath(filename),get_encoding(filename)['encoding']))
+    print("COPY %s FROM '%s' DELIMITER ',' CSV HEADER ENCODING '%s';" %(tablename, os.path.abspath(filename),get_encoding(filename)))
     
     print("-" * os.get_terminal_size()[0])
 
