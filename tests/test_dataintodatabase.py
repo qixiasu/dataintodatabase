@@ -5,8 +5,6 @@
 
 import unittest
 
-from dataintodatabase.dataintodatabase import printer
-
 
 class TestDataintodatabase(unittest.TestCase):
     """Tests for `dataintodatabase` package."""

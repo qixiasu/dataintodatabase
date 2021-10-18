@@ -3,7 +3,7 @@
 """The setup script."""
 
 from setuptools import setup, find_packages
-from dataintodatabase.__version__ import version
+from dataintodatabase.filefunc.version import version
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
